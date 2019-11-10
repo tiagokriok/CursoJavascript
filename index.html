@@ -6,13 +6,28 @@
     <body>
 
         <script>
-            function soma(num1, num2){
-                var resultado = num1 + num2;
+            function retornaSexo(sexo){
+                // Masculino -> M
+                //Feminino -> F
+                // if (sexo === "M"){
+                //     return "Masculino"
+                // }else if (sexo === "F"){
+                //     return "Feminino"
+                // }else{
+                //     return "Não Informado"
+                // }
 
-                return resultado
+                switch (sexo) {
+                    case "F":
+                        return "Feminino";
+                    case "M":
+                        return "Masculino";
+                    default:
+                        return "Não Informado";
+                }
             }
 
-            var resultado = soma(50,50);
+            var resultado = retornaSexo("F");
 
             console.log(resultado);
         </script>
