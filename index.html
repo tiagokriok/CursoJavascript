@@ -6,23 +6,15 @@
     <body>
 
         <script>
-            var x = 10, y = 5;
-            
-            var soma = x + y;
-            var subtracao = x - y;
-            var multiplicacao = x * y;
-            var divisao = x / y;
-            var mod = x % y;
+            function soma(num1, num2){
+                var resultado = num1 + num2;
 
-            console.log(soma);
-            console.log(subtracao);
-            console.log(multiplicacao);
-            console.log (divisao);
-            console.log(mod);
+                return resultado
+            }
 
-            x += 3;
-            // x = x + 3 
-            console.log(x);
+            var resultado = soma(50,50);
+
+            console.log(resultado);
         </script>
     </body>
 </html>
