@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Módulo 1 Exercício 5</title>
+    </head>
+    <body>
+
+        <script>
+            let usuarios =[
+                {
+                    nome: "Tiago",
+                    habilidades: ["Javascript","ReactJS", "Redux"]
+                },
+                {
+                    nome: "Lucas",
+                    habilidades: ["VueJS", "Ruby on Rails", "Elixir"]
+                }
+            ];
+
+            function exibe(usuarios){
+                for (let usuario of usuarios){
+                    console.log(`O ${usuario.nome} possui as habilidades: ${usuario.habilidades.join(', ')}`)
+                }
+            }
+
+            exibe(usuarios);
+        </script>
+    </body>
+</html>
