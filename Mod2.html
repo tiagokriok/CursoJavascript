@@ -5,21 +5,14 @@
     </head>
     <body>
         <div id="app">
-            
+          <div class="box"></div>
         </div>
-
         <script>
-            let linkElement = document.createElement('a');
+            let boxElement = document.querySelector('.box');
 
-            linkElement.setAttribute('href', 'http://google.com.br');
-
-            let textElement = document.createTextNode('Acessar o Google');
-
-            linkElement.appendChild(textElement);
-
-            let containerElement = document.querySelector('#app');
-
-            containerElement.appendChild(linkElement);
+            boxElement.style.width = 100;
+            boxElement.style.height = 100;
+            boxElement.style.backgroundColor = "#f00";
         </script>
     </body>
 </html>
