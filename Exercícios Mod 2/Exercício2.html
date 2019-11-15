@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Curso Javascript</title>
+    </head>
+    <body>
+        <button id="btn">Quadrado</button>
+        <div id="app"></div>
+        <script>
+
+            let btnElement = document.getElementById('btn');
+            let squaresElement = document.getElementById('app');
+            function getRandomColor() {
+                let letters = '0123456789ABCDEF';
+                let color = '#';
+                for (let i = 0; i < 6; i++) {
+                    color += letters[Math.floor(Math.random() * 16)];
+                }
+                return color;
+            }
+
+            btnElement.onclick = function () {
+                let square = document.createElement('div');
+                square.style.width = '100px';
+                square.style.height = '100px';
+                square.style.backgroundColor = '#F00';
+                square.onmouseover = function () {
+                    square.style.backgroundColor = getRandomColor();
+                }
+                squaresElement.appendChild(square);
+            };
+
+        </script>
+    </body>
+</html>
