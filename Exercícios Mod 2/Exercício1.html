@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Curso Javascript</title>
+    </head>
+    <body>
+        <div id="app">
+        </div>
+        <button onclick="createSquare()"> Quadrado </button>
+        <script>
+            function createSquare() {
+                let div = document.createElement('div');
+                div.style.width = 100;
+                div.style.height = 100;
+                div.style.backgroundColor = '#f00';
+
+                let containerElement = document.querySelector('#app');
+                containerElement.appendChild(div);
+            }
+
+        </script>
+    </body>
+</html>
