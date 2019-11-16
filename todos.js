@@ -2,8 +2,20 @@ let listElement = document.querySelector('#app ul');
 let inputlement = document.querySelector('#app input');
 let buttonElement = document.querySelector('#app button');
 
-let todo = [
+let todos = [
     'Fazer café',
     'Estudar Javascript',
     'Acessar Comunidade da Rocketseat'
 ];
+
+function renderTodos() {
+    for (todo of todos){
+        let todoElement = document.createElement('li');
+        let todoText = document.createTextNode(todo);
+
+        todoElement.appendChild(todoText);
+        listElement.appendChild(todoElement);
+    }
+}
+
+renderTodos();
